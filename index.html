@@ -443,16 +443,19 @@
                     <div class="contact__data">
                         <span class="section-subtitle contact__initial">Свяжитесь с нами</span>
                         <h2 class="section-title contact__initial">Форма бронирования</h2>
-                        <form class="contact__form" id="bookingForm">
+                        <form class="contact__form" id="bookingForm" 
+                              action="mailto:maxkabanov63@icloud.com" 
+                              method="POST" 
+                              enctype="text/plain">
                             <div class="contact__inputs">
-                                <input type="text" id="name" placeholder="Ваше имя" class="contact__input" required>
-                                <input type="email" id="email" placeholder="Ваш email" class="contact__input" required>
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" class="contact__input" required>
+                                <input type="email" id="email" name="email" placeholder="Ваш email" class="contact__input" required>
                             </div>
                             <div class="contact__inputs">
-                                <input type="tel" id="phone" placeholder="Ваш телефон" class="contact__input" required>
-                                <input type="datetime-local" id="datetime" class="contact__input" required>
+                                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" class="contact__input" required>
+                                <input type="datetime-local" id="datetime" name="datetime" class="contact__input" required>
                             </div>
-                            <textarea id="message" cols="0" rows="5" placeholder="Сообщение" class="contact__input"></textarea>
+                            <textarea id="message" name="message" cols="0" rows="5" placeholder="Сообщение" class="contact__input"></textarea>
                             <input type="submit" value="Отправить" class="button contact__button">
                         </form>
                     </div>
